@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Baseer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bokeh"></canvas>
+
+<section class="hero" id="hero">
+  <p class="hero-eyebrow" id="typewriter"></p>
+  <h1 class="hero-name">Baseer Ali</h1>
+  <p class="hero-sub">
+  31 years of a life still unfolding — and a lot more chapters waiting to be written.
+</p>
+
+  <div class="countdown" id="countdown">
+    <div class="orb" data-unit="years">
+        <span class="orb-num" id="age-years">31</span>
+        <span class="orb-label">Years</span>
+    </div>
+
+    <div class="orb" data-unit="months">
+        <span class="orb-num" id="age-months">0</span>
+        <span class="orb-label">Months</span>
+    </div>
+
+    <div class="orb" data-unit="days">
+        <span class="orb-num" id="age-days">0</span>
+        <span class="orb-label">Days</span>
+    </div>
+
+    <div class="orb" data-unit="hours">
+        <span class="orb-num" id="age-hours">0</span>
+        <span class="orb-label">Hours</span>
+    </div>
+
+    <div class="orb" data-unit="minutes">
+        <span class="orb-num" id="age-minutes">0</span>
+        <span class="orb-label">Minutes</span>
+    </div>
+
+    <div class="orb" data-unit="seconds">
+        <span class="orb-num" id="age-seconds">0</span>
+        <span class="orb-label">Seconds</span>
+    </div>
+</div>
+
+  <div class="scroll-cue">
+    <span></span>
+   <p>turn the page ↓</p>
+  </div>
+</section>
+
+<section class="journey" id="journey">
+  <h2 class="section-title">how a random Thursday turned into this</h2>
+
+  <div class="timeline">
+    <div class="timeline-line"><div class="timeline-fill" id="timelineFill"></div></div>
+
+<div class="timeline-point" data-index="0">
+  <span class="point-dot"></span>
+  <div class="point-card">
+    <p class="point-eyebrow">the person behind it all</p>
+    <p class="point-text">It wasn't just the opinions, the confidence or the chaos. Somewhere along the way, I started noticing the person behind all of it — and that's the part I stayed for.</p>
+  </div>
+</div>
+
+<div class="timeline-point" data-index="1">
+  <span class="point-dot"></span>
+  <div class="point-card">
+    <p class="point-eyebrow">that stubborn little belief</p>
+    <p class="point-text">There was always this feeling that you were meant for more. Even when things didn't go your way, I kept thinking: believe him, let him take his time — he'll come back with something amazing.</p>
+  </div>
+</div>
+
+<div class="timeline-point" data-index="2">
+  <span class="point-dot"></span>
+  <div class="point-card">
+    <p class="point-eyebrow">the little things</p>
+    <p class="point-text">The laugh. The random expressions. The effortless humour. The moments when you're not even trying to be entertaining — somehow, those are always the ones that stay with me.</p>
+  </div>
+</div>
+
+<div class="timeline-point" data-index="3">
+  <span class="point-dot"></span>
+  <div class="point-card">
+    <p class="point-eyebrow">watching you grow</p>
+    <p class="point-text">Maybe that's one of the nicest parts of being here for so long — getting to watch you evolve, take on new things, learn, grow and slowly become an even stronger version of yourself.</p>
+  </div>
+</div>
+
+<div class="timeline-point" data-index="4">
+  <span class="point-dot"></span>
+  <div class="point-card">
+    <p class="point-eyebrow">still rooting for you</p>
+    <p class="point-text">And after everything, it really comes down to something simple: I want to see you win. Bigger dreams, bigger opportunities, your absolute peak — I'll always be somewhere cheering a little louder than necessary.</p>
+  </div>
+</div>
+
+</div>
+</section>
+
+<section class="gallery" id="gallery">
+  <h2 class="section-title">a few favourites</h2>
+  <div class="filmstrip-track">
+    <div class="filmstrip" id="filmstrip">
+      <figure class="frame"><img src="images/g01_brown_hair_smile.jpg" alt=""><figcaption>that smile, unbothered</figcaption></figure>
+
+<figure class="frame"><img src="images/g02_motion_blur.jpg" alt=""><figcaption>a little chaos, a little style</figcaption></figure>
+
+<figure class="frame"><img src="images/g03_palm_jacket.jpg" alt=""><figcaption>main character energy</figcaption></figure>
+
+<figure class="frame"><img src="images/g04_neck_pillow_funny.jpg" alt=""><figcaption>the goofy side nobody can resist</figcaption></figure>
+
+<figure class="frame"><img src="images/g05_night_sunglasses.jpg" alt=""><figcaption>that laugh, again</figcaption></figure>
+
+<figure class="frame"><img src="images/g06_award_trophy.jpg" alt=""><figcaption>earned, not given</figcaption></figure>
+
+<figure class="frame"><img src="images/g07_wine_glass.jpg" alt=""><figcaption>effortless, always</figcaption></figure>
+
+<figure class="frame"><img src="images/g08_pink_blazer.jpg" alt=""><figcaption>bold and completely him</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="letter-section" id="letterSection">
+  <div class="marquee-bg" aria-hidden="true">
+    <div class="marquee-col" id="marqueeCol"></div>
+  </div>
+  <div class="marquee-fade marquee-fade-top"></div>
+  <div class="marquee-fade marquee-fade-bottom"></div>
+
+  <div class="letter-wrap">
+    <p class="letter-kicker">a letter from Madiehaa 🎀</p>
+    <div class="letter-card" id="letterCard"></div>
+  </div>
+</section>
+
+<section class="seal-section" id="sealSection">
+
+  <div class="constellation" id="constellation">
+
+    <svg viewBox="0 0 420 360" class="constellation-svg">
+
+      <!-- constellation lines -->
+      <g class="constellation-lines">
+        <line x1="150" y1="70" x2="210" y2="45"/>
+        <line x1="210" y1="45" x2="275" y2="75"/>
+        <line x1="275" y1="75" x2="315" y2="135"/>
+        <line x1="315" y1="135" x2="275" y2="180"/>
+        <line x1="275" y1="180" x2="315" y2="230"/>
+        <line x1="315" y1="230" x2="270" y2="290"/>
+        <line x1="270" y1="290" x2="205" y2="315"/>
+        <line x1="205" y1="315" x2="145" y2="285"/>
+        <line x1="145" y1="285" x2="105" y2="225"/>
+        <line x1="105" y1="225" x2="145" y2="180"/>
+        <line x1="145" y1="180" x2="105" y2="135"/>
+        <line x1="105" y1="135" x2="150" y2="70"/>
+      </g>
+
+      <!-- constellation stars -->
+      <g class="constellation-stars">
+
+        <circle cx="150" cy="70" r="3"/>
+        <circle cx="210" cy="45" r="4"/>
+        <circle cx="275" cy="75" r="3"/>
+        <circle cx="315" cy="135" r="4"/>
+        <circle cx="275" cy="180" r="3"/>
+        <circle cx="315" cy="230" r="3.5"/>
+        <circle cx="270" cy="290" r="4"/>
+        <circle cx="205" cy="315" r="3"/>
+        <circle cx="145" cy="285" r="3.5"/>
+        <circle cx="105" cy="225" r="4"/>
+        <circle cx="145" cy="180" r="3"/>
+        <circle cx="105" cy="135" r="3.5"/>
+
+        <!-- smaller surrounding stars -->
+        <circle cx="72" cy="92" r="1.8"/>
+        <circle cx="340" cy="92" r="2"/>
+        <circle cx="350" cy="185" r="1.6"/>
+        <circle cx="75" cy="285" r="2"/>
+        <circle cx="185" cy="340" r="1.8"/>
+        <circle cx="250" cy="25" r="1.7"/>
+
+      </g>
+
+      <!-- central B -->
+      <text x="210" y="205"
+            text-anchor="middle"
+            class="constellation-letter">B</text>
+
+    </svg>
+
+  </div>
+
+  <p class="seal-caption">some stars are worth looking up to</p>
+
+</section>
+<section class="finale" id="finale">
+
+  <div class="finale-stars">✦　·　✧　·　✦</div>
+
+  <p class="finale-eyebrow">the final page</p>
+
+  <div class="finale-number">31</div>
+
+  <p class="finale-years">
+    another year, another chapter
+  </p>
+
+  <div class="finale-divider">
+    <span></span>
+    <span>✦</span>
+    <span></span>
+  </div>
+
+  <h2 class="finale-title">September 5</h2>
+
+  <p class="finale-text">
+    the story continues...
+  </p>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
